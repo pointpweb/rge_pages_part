@@ -57,15 +57,16 @@
 
 .font-open-sans .section h1.section-title {
     font-family: "Open Sans", sans-serif;
-    font-size: 2.188rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: 2.5rem;
+    line-height: 1.875rem;
     text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
     .font-open-sans .section h1.section-title {
         font-size: 2.188rem;
+        line-height: 2.5rem;
     }
 }
 
@@ -87,7 +88,7 @@
     max-width: unset;
 }
 
-.section-service-detail-top .description {
+.section-service-detail-top .description p {
     padding: 0;
     color: #333333;
     font-family: "Open Sans", sans-serif;
@@ -96,7 +97,7 @@
 }
 
 @media (min-width: 768px) {
-    .section-service-detail-top .description {
+    .section-service-detail-top .description p {
         font-size: 1rem;
         line-height: 1.125rem;
     }
@@ -123,7 +124,7 @@
     .lpMain {
         padding: 0 40px;
         font-size: 1rem;
-        line-height: 1.375rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -181,15 +182,15 @@
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    font-size: 1rem;
-    line-height: 1.125rem;
+    font-size: .875rem;
+    line-height: 1.5rem;
 }
 
 @media (min-width: 768px) {
     .lpTitle__h3,
     .font-open-sans .block-wysiwyg h3.lpTitle__h3 {
         font-size: 1rem;
-        line-height: 1.125rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -203,13 +204,13 @@
     padding: 0;
     font-family: "Open Sans", sans-serif;
     font-size: .875rem;
-    line-height: 1.125rem;
+    line-height: 1.375rem;
 }
 
 @media (min-width: 768px) {
     .block-wysiwyg .lpMain p {
         font-size: 1rem;
-        line-height: 1.125rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -226,14 +227,14 @@
     margin: 0;
     font-family: "Open Sans", sans-serif;
     font-size: .875rem;
-    line-height: 1.125rem;
+    line-height: 1.375rem;
 }
 
 @media (min-width: 768px) {
     .block-wysiwyg .lpMain ol, 
     .block-wysiwyg .lpMain ul {
         font-size: 1rem;
-        line-height: 1.125rem;
+        line-height: 1.5rem;
     }
 }
 
@@ -278,11 +279,12 @@
 
 a.lpLink {
     width: fit-content;
-    color: #E75012;
+    color: #333333;
     font-family: "Open Sans", sans-serif;
     text-decoration: underline;
     font-size: .875rem;
     line-height: 1.125rem;
+    font-weight: 700;
     transition: all .3s ease-out;
 }
 
@@ -291,12 +293,11 @@ a.lpLink {
         font-size: 1rem;
         line-height: 1.125rem;
     }
-}
 
-/* a.lpLink:hover {
-    opacity: .7;
-    text-decoration: underline;
-} */
+    a.lpLink:hover {
+        text-decoration-thickness: 15%;
+    }
+}
 
 /***** Images *****/
 
