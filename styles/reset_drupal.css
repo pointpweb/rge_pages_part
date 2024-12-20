@@ -115,9 +115,9 @@
     font-size: .875rem;
     line-height: 1.375rem;
     color: #333333;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    row-gap: 56px
+    row-gap: 56px */
 }
 
 @media (min-width: 768px) {
