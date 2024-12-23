@@ -26,7 +26,7 @@
                     <div class="section section-service-detail-top">
                         <div class="container">
                             <h1 class="section-title">
-                                RÉUSSIR ENSEMBLE LE CHANTIER PRIMORDIAL DE LA RÉNOVATION ÉNERGÉTIQUE
+                                <span class="changed-color">RÉUSSIR ENSEMBLE</span> LE CHANTIER PRIMORDIAL DE LA RÉNOVATION ÉNERGÉTIQUE
                             </h1>
                             <div class="description">
                                 <p>Lorem ipsum dolor sit amet consectetur. Pharetra et nulla placerat viverra. Lacus blandit sed eu
@@ -912,10 +912,11 @@
                         }
     
                         .section-service-detail-top .container {
-                            margin: 0 16px;
-                            padding: 16px;
+                            margin: 0 16px !important;
+                            padding: 16px !important;
                             background-color: #FFFFFF;
                             color: #000000;
+                            width: auto !important;
                         }
     
                         .section-title .changed-color {
@@ -1732,9 +1733,9 @@
                             }
     
                             .section-service-detail-top .container {
-                                margin: 0 32px;
-                                padding: 24px;
-                                width: 50%;
+                                margin: 0 32px !important;
+                                padding: 24px !important;
+                                width: 50% !important;
                             }
     
                             /* Title */
@@ -1925,22 +1926,6 @@
     
                     <!-- JS - START -->
                     <script defer>
-                        const h1 = document.querySelector("h1");
-                        if (h1) {
-                            const text = h1.innerText;
-                            const words = text.split(" ");
-                            if (words.length >= 2) {
-                                const firstTwoWords = words.slice(0, 2).join(" ");
-                                const restOfText = words.slice(2).join(" ");
-                                h1.innerHTML = `<span class="text-container"><span class="highlight-text">${firstTwoWords}</span> ${restOfText}</span>`;
-                                // Get the new span element with the highlight-text class
-                                const span = h1.querySelector(".highlight-text");
-                                // Force a reflow to make sure the transition is noticeable
-                                void span.offsetWidth;
-                                // Add the class to trigger the color change
-                                span.classList.add('changed-color');
-                            }
-                        }
                         // Trouver un artisan qualifie - selection
                         function toggleList(id) {
                             console.log(id)
