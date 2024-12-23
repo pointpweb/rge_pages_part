@@ -1549,12 +1549,20 @@
                             padding: 16px;
                             background: #D8D8D8;
                             border-radius: 50px;
-                            width: 64px;
-                            height: 64px;
                             cursor: pointer;
                             position: fixed;
                             bottom: 5%;
                             right: 5%;
+                            justify-content: center;
+                            align-items: center;
+                            max-width: 80px;
+                            max-height: 80px;
+                        }
+
+                        .back-to-top img{
+                            height: 48px !important;
+                            width: 48px !important;
+                            margin: 0;
                         }
     
                         /* Bouton back to top */
@@ -1976,7 +1984,7 @@
                             // Affiche ou masque le bouton en fonction du défilement
                             window.addEventListener("scroll", function () {
                                 if (window.scrollY > 400) {
-                                    backToTopButton.style.display = "block";
+                                    backToTopButton.style.display = "flex";
                                 } else {
                                     backToTopButton.style.display = "none";
                                 }
